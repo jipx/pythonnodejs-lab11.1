@@ -6,12 +6,12 @@
       "Principal": "*",
       "Action": "s3:GetObject",
       "Resource": [
-        "arn:aws:s3:::c81790a1735462l4885374t1w584582802163-s3bucket-1afyts37f7bs2/*",
-        "arn:aws:s3:::c81790a1735462l4885374t1w584582802163-s3bucket-1afyts37f7bs2"
+        "arn:aws:s3:::jipx-04-10-2023-s3bucket/*",
+        "arn:aws:s3:::jipx-04-10-2023-s3bucket"
       ],
       "Condition": {
         "IpAddress": {
-          "aws:SourceIp": "61.16.104.108/32"
+          "aws:SourceIp": ["61.16.104.108/32"]
         }
       }
     },
@@ -20,7 +20,7 @@
       "Effect": "Deny",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::c81790a1735462l4885374t1w584582802163-s3bucket-1afyts37f7bs2/report.html",
+      "Resource": "arn:aws:s3:::jipx-04-10-2023-s3bucket/report.html",
       "Condition": {
         "StringNotEquals": {
           "s3:authtype": "REST-QUERY-STRING"

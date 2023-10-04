@@ -9,8 +9,8 @@ AWS.config.update({
 // Create an S3 instance
 const s3 = new AWS.S3();
 
-const bucketName = 'c81790a1735462l4885374t1w584582802163-s3bucket-1afyts37f7bs2';
-const policyFilePath = '/home/ec2-user/environment/resources/public_policy.json';
+const bucketName = 'jipx-04-10-2023-s3bucket';
+const policyFilePath = './public_policy.json';
 
 // Read the policy file
 const policy = fs.readFileSync(policyFilePath, 'utf8');
