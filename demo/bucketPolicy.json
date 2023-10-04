@@ -1,0 +1,19 @@
+{
+    "Version": "2008-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::c81790a1735462l4885374t1w584582802163-s3bucket-1afyts37f7bs2/*",
+                "arn:aws:s3:::c81790a1735462l4885374t1w584582802163-s3bucket-1afyts37f7bs2"
+            ],
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": "0.0.0.0/32"
+                }
+            }
+        }
+    ]
+}
